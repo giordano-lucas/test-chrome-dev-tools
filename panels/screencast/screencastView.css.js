@@ -82,7 +82,7 @@ export default {
   z-index: 2;  /* Above .screencast-glasspane. */
 }
 
-.screencast-viewport {
+.screencast-viewport2 {
   display: flex;
   flex: 1;
   width: 100% !important;  /* Force full width */
@@ -92,13 +92,32 @@ export default {
   background-color: var(--sys-color-surface-variant);
 }
 
-.screencast-canvas-container {
+.screencast-canvas-container2 {
   flex: 1;
   display: flex;
   width: 100% !important;  /* Force full width */
   height: 100% !important; /* Force full height */
   margin: 0 auto;
   padding: 0;
+  position: relative;
+}
+
+.screencast-viewport {
+  display: flex;
+  border: 1px solid var(--sys-color-divider);
+  border-radius: 4px;
+  flex: none;
+  padding: 4px;
+  margin: auto;
+  background-color: var(--sys-color-surface-variant);
+}
+
+.screencast-canvas-container {
+  flex: auto;
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--sys-color-divider);
   position: relative;
 }
 
